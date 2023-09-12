@@ -11,7 +11,7 @@ public class ReverseWordsUsingStack {
 
 	private static void reverseWords(String str) {
 		
-		Stack<Character> st = new Stack<Character>();
+		Stack<Character> st = new Stack<>();
 		for(int i=0;i<str.length();i++) {
 			
 			if(str.charAt(i)!= ' ' ) {

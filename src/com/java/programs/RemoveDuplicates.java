@@ -7,18 +7,18 @@ public class RemoveDuplicates {
 
 	public static void main(String[] args) {
 		
-		String str="aaabcbcbcddcccb";
+		String str="aaabdbbddb";
 		System.out.println(removeDuplicateCharacters(str));
 
 	}
 	
 	private static String removeDuplicateCharacters(String str) {
 		
-		Set<Character> set = new HashSet<Character>();
+		Set<Character> set = new HashSet<>();
 		StringBuffer sb = new StringBuffer();
 		
 		for(int i=0;i<str.length();i++) {
-			Character ch = str.charAt(i);
+			char ch = str.charAt(i);
 			if(!set.contains(ch)) {
 				set.add(ch);
 				sb.append(ch);

@@ -8,6 +8,9 @@ public class FindLargestSmallestNumber {
 		int largest= Integer.MIN_VALUE;
 		int smallest = Integer.MAX_VALUE;
 		
+		System.out.println("MIN VALUE: "+Integer.MIN_VALUE);
+		System.out.println("MAX VALUE: "+Integer.MAX_VALUE);
+		
 		for(int num: arr) {
 			if(num>largest)
 				largest= num;

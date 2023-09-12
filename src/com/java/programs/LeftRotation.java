@@ -32,9 +32,7 @@ public class LeftRotation {
 
 	private static void leftRotate(int[] arr, int pos) {
 		
-		int temp;
-		int j;
-		
+		int temp;int j;
 		for(int i=0;i<pos;i++) {
 				temp = arr[0];
 		for(j=0;j<arr.length-1;j++) {
@@ -48,13 +46,12 @@ private static void rightRotate(int[] arr, int pos) {
 		
 		int temp;
 		int j;
-		
 		for(int i=0;i<pos;i++) {
 				temp = arr[arr.length-1];
 		for(j=arr.length-1;j>0;j--) {
 				arr[j]= arr[j-1];
 		}
-		arr[0]= temp;
+		arr[j]= temp;
 		}
 	}
 

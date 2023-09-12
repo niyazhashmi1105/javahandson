@@ -13,10 +13,8 @@ public class StringReverseRecursion {
 		if(s==null || s.length()<=1) { 
 				return s;
 		}
-		
-		else {
-			return(reverseRecursion(s.substring(1)))+s.charAt(0);
-	}
+		return(reverseRecursion(s.substring(1)))+s.charAt(0);
+	
 	}
 
 }

@@ -15,7 +15,7 @@ public class GetFirstChar {
 		for(int i=0;i<words.length;i++) {
 			
 			String firstChar= words[i];
-			System.out.print(firstChar.charAt(0)+" ");
+			System.out.print(firstChar.charAt(0)+",");
 		}
 		
 	}

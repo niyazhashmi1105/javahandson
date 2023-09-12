@@ -10,19 +10,19 @@ public class CompressedString {
 	public static void main(String[] args) {
 		
 		String str="abbccc";
-		getCompressedString(str);
+		System.out.println(getCompressedString(str));
 
 	}
 
-	private static void getCompressedString(String str) {
+	private static String getCompressedString(String str) {
 		
-		Map<Character,Integer> map = new LinkedHashMap<Character,Integer>();
+		Map<Character,Integer> map = new LinkedHashMap<>();
 		StringBuilder sb = new StringBuilder();
 		
 		for(int i=0;i<str.length();i++) {
 			Integer ch= map.get(str.charAt(i));
 			
-			if(map.get(str.charAt(i))== null) 
+		if(ch== null) 
 				map.put(str.charAt(i),1);
 			else
 				map.put(str.charAt(i),++ch);
@@ -33,7 +33,8 @@ public class CompressedString {
 			sb.append(entry.getKey());
 			sb.append(entry.getValue());
 		}
-		System.out.println(sb.toString());
+		//System.out.println(sb.toString());
+		return sb.toString();
 		
 	}
 

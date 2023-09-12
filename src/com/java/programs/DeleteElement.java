@@ -1,7 +1,6 @@
 package com.java.programs;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class DeleteElement {
 
@@ -12,17 +11,10 @@ public class DeleteElement {
 		
 		System.out.println("Original Array: "+ Arrays.toString(originalArr));
 		System.out.println("Enter the index location to delete the element at:");
-		Scanner sc = new Scanner(System.in);
-		int index=0;
-		try {
-				index=sc.nextInt();
-				sc.close();
-				if(index>originalArr.length)
-					System.out.println("Please enter valid index");
-		}catch(ArrayIndexOutOfBoundsException e) {
-			
-			e.printStackTrace();
-		}
+		
+		int index=2;
+		if(index>originalArr.length)
+		System.out.println("Please enter valid index");
 		
 		for(int i=0,k=0;i<originalArr.length;i++) {
 			if(index==i) {

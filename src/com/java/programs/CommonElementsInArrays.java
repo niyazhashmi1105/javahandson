@@ -15,7 +15,7 @@ public class CommonElementsInArrays {
 		Integer []arr3= {1,5,9,10,2};
 		
 		
-		Set<Integer> set= new HashSet<Integer>();
+		Set<Integer> set= new HashSet<>();
 		set.addAll(Arrays.asList(arr1));
 		set.addAll(Arrays.asList(arr2));
 		set.addAll(Arrays.asList(arr3));

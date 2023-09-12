@@ -4,8 +4,8 @@ public class CheckIfRotated {
 
 	public static void main(String[] args) {
 		
-		String str= "abcd";
-		String rotatedStr= "bcda";
+		String str= "bcd";
+		String rotatedStr= "bcd";
 		System.out.println(isRotated(str,rotatedStr));
 	}
 

@@ -8,13 +8,13 @@ public class GetFirstNonRepeatedChar {
 
 	public static void main(String[] args) {
 		
-		String str= "aaabbbcdeff";
+		String str= "aaabbbceeeff";
 		char ch= getFirstNonRepeatedChar(str);
 		System.out.println("First non repeated character = "+ ch);
 	}
 
 	private static char getFirstNonRepeatedChar(String str) {
-		Map<Character,Integer> countMap = new LinkedHashMap<Character,Integer>();
+		Map<Character,Integer> countMap = new LinkedHashMap<>();
 		
 		for(char ch: str.toCharArray()) {
 			/*
@@ -28,7 +28,7 @@ public class GetFirstNonRepeatedChar {
 			if(entry.getValue()==1)
 				return entry.getKey();
 		}
-		
+		 
 		throw new RuntimeException("unable to get any first non repeated character") ;
 	}
 

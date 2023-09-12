@@ -10,11 +10,11 @@ public class WordsReverseFirstLetterCapitalize {
 		StringBuilder resultBuilder = new StringBuilder();
 		
 		for(String w:str.split(" ")) {
-			StringBuilder builder = new StringBuilder(w);
 			
-			revWord=builder.reverse().toString();
+			StringBuilder builder = new StringBuilder(w.toLowerCase());
 			
-			revWord= Character.toUpperCase(revWord.charAt(0))+revWord.substring(1);
+			revWord = builder.reverse().toString();
+			revWord = Character.toUpperCase(revWord.charAt(0))+revWord.substring(1);
 			resultBuilder.append(revWord).append(" ");
 			
 		}

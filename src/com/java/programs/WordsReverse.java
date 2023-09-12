@@ -7,9 +7,9 @@ public class WordsReverse {
 		String s =" Welcome to Java World";
 		
 		String [] word= s.split(" ");
-		
+		System.out.println("Words in reverse order");
 		for(int i=word.length-1;i>0;i--) {
-			System.out.println("Words in reverse order= "+word[i]);
+			System.out.println(word[i]);
 		}
 
 	}

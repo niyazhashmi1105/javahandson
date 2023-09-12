@@ -56,22 +56,19 @@ public class WordVowelUpperCaseFrequencyCount {
 
 	private static void getVowelCount(String str) {
 		
+		str = str.toLowerCase();
 		int vowelCount=0;
 		for(int i=0;i<str.length();i++) {
 			
 			char ch= str.charAt(i);
 			switch(ch) {
-				case 'A':
-				case 'E':
-				case 'I':
-				case 'O':
-				case 'U':
-				case 'a':
-				case 'e':
-				case 'i':
-				case 'o':
-				case 'u':
+			case 'a':
+			case 'e':
+			case 'i':
+			case 'o':
+			case 'u':
 					vowelCount++;
+					break;
 			}
 		}
 		System.out.println("VowelCount= "+vowelCount);

@@ -1,6 +1,6 @@
 package com.java.programs;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 
@@ -9,13 +9,13 @@ public class DuplicateCharacterOccurrence {
 	public static void main(String[] args) {
 		
 		String s= "Automation Javaaa Selenium";
-		getDuplicateCharacterOccurrences(s);
+		getCharacterCountOccurrences(s);
 	}
 	
-	private static void getDuplicateCharacterOccurrences(String str) {
+	private static void getCharacterCountOccurrences(String str) {
 		
 		
-		Map<Character,Integer> map = new HashMap<>();
+		Map<Character,Integer> map = new LinkedHashMap<>();
 		str=str.toLowerCase();
 		char [] ch = str.toCharArray();
 		

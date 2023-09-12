@@ -14,33 +14,34 @@ public class FrequencyCountDesc {
 	public static void main(String[] args) {
 		
 		String str = "banana";
-		getFrequencyCountDescOrder(str);
+		getFrequencyCountAscOrder(str);
 	}
 
-	private static void getFrequencyCountDescOrder(String str) {
+	private static void getFrequencyCountAscOrder(String str) {
 	
-		Map<Character,Integer> map = new HashMap<Character,Integer>();
+		Map<Character,Integer> map = new HashMap<>();
 		
 		for(int i=0;i<str.length();i++) {
 			Integer ch= map.get(str.charAt(i));
 			
-			if(map.get(str.charAt(i))== null) 
+			if(ch== null) 
 				map.put(str.charAt(i),1);
 			else
 				map.put(str.charAt(i),++ch);
 				
 		}
-		Set<Entry<Character,Integer>> set = map.entrySet();
-		List<Entry<Character,Integer>> list = new ArrayList<Entry<Character,Integer>>(set);
-		Collections.sort(list, new Comparator<Map.Entry<Character,Integer>>(){
-				
-			@Override
-			public int compare(Entry<Character,Integer> o1,Entry<Character,Integer> o2) {
+		/*
+		 * Set<Entry<Character,Integer>> set = map.entrySet();
+		 * List<Entry<Character,Integer>> list = new ArrayList<>(set);
+		 * Collections.sort(list, new Comparator<>(){
+		 * 
+		 * @Override public int compare(Entry<Character,Integer>
+		 * o1,Entry<Character,Integer> o2) {
+		 * 
+		 * return o2.getValue().compareTo(o1.getValue()); }});
+		 */
 		
-				return o2.getValue().compareTo(o1.getValue());
-	}});
-		
-		for(Entry<Character,Integer> entry:list) {
+		for(Entry<Character,Integer> entry:map.entrySet()) {
 			System.out.println(entry.getKey()+" "+entry.getValue());
 		}
 	

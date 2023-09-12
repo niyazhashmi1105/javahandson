@@ -21,6 +21,7 @@ public class NextGreaterElement {
 				}
 			}
 			System.out.println(arr[i]+" --> "+next);
+			
 		}
 		
 		

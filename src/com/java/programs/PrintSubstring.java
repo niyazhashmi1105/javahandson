@@ -4,7 +4,7 @@ public class PrintSubstring {
 
 	public static void main(String[] args) {
 		
-		String str= "abc";
+		String str= "abcd";
 		
 		for(int i=0;i<str.length();i++) {
 			

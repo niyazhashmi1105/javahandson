@@ -12,7 +12,8 @@ public class MissingNumber {
 
 	private static int getMissingNumber(int[] arr, int n) {
 		
-		int expectedSum,actualSum=0;
+		int expectedSum=0;
+		int actualSum=0;
 		expectedSum= (n*(n+1)/2);
 		for(int i:arr) {
 			actualSum+=i;
